@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# React OTPless Token Display
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React component is designed to display OTPless user information upon successful registration and signup. It utilizes the useEffect and useState hooks to manage component state and update the UI accordingly.
+
+
 
 ## Available Scripts
 
@@ -14,10 +16,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `npm script`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+     <script type="text/javascript" src="https://otpless.com/auth.js"></script>
+          <div id="otpless-login-page">
+        <div id="root"></div>
 
 ### `npm run build`
 
@@ -27,44 +30,25 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+## How its working
+
+The App component uses the OTPless API to retrieve user information upon successful registration and signup. The received token information is then displayed in a card format. The useEffect hook ensures that the component is updated when the OTPless user information changes.
+
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+#OTPLESS SDK
+the term suggests a software development kit (SDK) related to OTPless authentication or token-based systems. "OTPless" may refer to authentication methods that do not rely on traditional one-time passwords (OTPs), but rather use alternative mechanisms for user verification.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To get accurate and up-to-date information about the OTPless SDK, I recommend checking the official documentation or website of the SDK provider. If it's a third-party library or service, the documentation should provide details on how to integrate and use the SDK in your application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##deployment
+for a deployment we used a netlify there we can easily deployed.
+ deployment(https://otpless-llama-a00b8b.netlify.app/) for more information.
